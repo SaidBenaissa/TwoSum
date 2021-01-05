@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution {
 public:
-    Solution() = default;;
+    Solution() = default;
 
     vector<int> twoSum(vector<int> &nums, int target) {
         map<int, int> map;
@@ -33,7 +33,8 @@ int main() {
     int target = 6;
 
     vector<int> two_sum = solution.twoSum(nums, target);
-    vector<int>::iterator iterator = two_sum.begin();
+
+    auto iterator = two_sum.begin();
     for (; iterator < two_sum.end(); ++iterator) {
 
         cout << *iterator << " "<< flush;
